@@ -843,6 +843,7 @@ footer.footer .rights h4 a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 45%;
+    background-color: red;
 }
 .content{
     background: #fff;
@@ -924,10 +925,7 @@ footer.footer .rights h4 a{
         grid-template-columns: 1fr;
         width: 100%;
     }
-    .image{
-        height: 100vh;
-        width: 100%;
-    }
+
     .content{
         height: 100vh;
     }
@@ -953,4 +951,11 @@ footer.footer .rights h4 a{
     .icons li i{
         font-size: 15px;
     }
+    .maintitle1{
+        font-size: 30px;
+    }
+    .maintitle2{
+        font-size: 15px;
+    }
 }
+
