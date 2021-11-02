@@ -22,23 +22,21 @@
         <link rel="stylesheet" href="./css/Style.css">
 
         <style>
-            @media (max-width: 550px) {
-               .big-container {
-                   display: none;
-               }
-            }
-            @media (min-width: 550px) {
-               .small-container {
-                   display: none;
-               }
-            }
+        @media (max-width: 719px) { 
+            .mc {display:none;}
+            .wc {display:initial;}
+        }
+
+        @media (min-width: 720px) { 
+            .mc {display:initial;}
+            .wc {display:none;}
+        }
             /* Responsive iFrame */
             .responsive-iframe-container {
                position: relative;
                padding-bottom: 56.25%;
                padding-top: 30px;
                height: 0;
-               overflow: hidden;
             }
             .responsive-iframe-container iframe,   
             .vresponsive-iframe-container object,  
@@ -93,7 +91,8 @@
         </nav>
 
         <div class="responsive-iframe-container big-container">
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&showTitle=0&mode=MONTH&src=eWRzYXRhbXVAZ21haWwuY29t&src=b2R2YWgwdWc5Y2hmc2xsZ2xpN2F2cnA2ZGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=bGwxYTgxZWs0NTQyYTJ0MDdsOGk1bWF2b2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4&color=%23D50000&color=%238E24AA" style="border:solid 1px #777" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
+            <iframe class="mc" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&showTitle=0&mode=MONTH&src=eWRzYXRhbXVAZ21haWwuY29t&src=b2R2YWgwdWc5Y2hmc2xsZ2xpN2F2cnA2ZGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=bGwxYTgxZWs0NTQyYTJ0MDdsOGk1bWF2b2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4&color=%23D50000&color=%238E24AA" style="border:solid 1px #777" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
+            <iframe class="wc" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&showTabs=0&showPrint=0&mode=WEEK&src=eWRzYXRhbXVAZ21haWwuY29t&src=b2R2YWgwdWc5Y2hmc2xsZ2xpN2F2cnA2ZGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=bGwxYTgxZWs0NTQyYTJ0MDdsOGk1bWF2b2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4&color=%23D50000&color=%238E24AA" style="border:solid 1px #777" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
         <!-- ------------x---------------  Navigation --------------------------x------------------- -->
 
