@@ -169,7 +169,9 @@ p{
 }
 /* -------x------- navbar ---------x------- */
 
-
+.maintitle1{
+    color: white;
+}
 /* ----------------- Main Content----------- */
 
 /* --------------- Site title ---------------- */
@@ -959,3 +961,336 @@ footer.footer .rights h4 a{
     }
 }
 
+
+.education-header{
+    width: 100%;
+    text-align: center;
+    color:#858585;
+    font-size: 50px;
+}
+.education-info{
+    width: 100%;
+    text-align: center;
+    color:#858585;
+    font-size: 30px;
+}
+.working-girl{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.educationHero{
+    /*background-color: rgb(255, 231, 197);*/
+    background: linear-gradient(205deg, transparent 0, transparent 50%, rgb(255, 163, 163) 0, rgb(255, 163, 163) 100%);
+}
+
+.book-carousel{
+    position: relative;
+    overflow: hidden;
+  }
+  .book--list{
+    background: red;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding: 30px;
+    background: no-repeat;
+    background-size: cover;
+  }
+  
+  .book-carousel--item{
+    list-style: none;
+    margin-top: -400px;
+    transform-origin: center left;
+    height: 400px;
+    width: 250px;
+  }
+  
+  .book-carousel--item:first-of-type{
+    margin-top: 0;
+  }
+  
+  .book{
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    box-shadow: 15px 0 25px 5px #00000087;
+  }
+  
+  .book--image{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+  
+  .book--text{
+    color: white;
+  }
+  
+  .bg img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter:blur(15px) brightness(.6);
+    transform: scale(1.1);
+    z-index: -1;
+  }
+
+  .carrousel {
+    background: #ffffff;
+    text-align: center;
+    padding: 4em 0;
+    height: 7.5em;
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .carrousel h2 {
+    margin: 0;
+    margin-top: -1.7em;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+    color: #bbbbbb;
+  }
+  .carrousel .slides {
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding-top: 1em;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+  
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+  }
+  .carrousel .slides li {
+    width: 25%;
+    position: relative;
+    float: left;
+  }
+  .carrousel li p{
+    margin-top: 0;  
+  }
+  .carrousel li q {
+    max-width: 90%;
+    margin: auto;
+    color: #666666;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .carrousel li img {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+  .carrousel li span.author {
+    margin-top:0.5em;
+    font-size: 1.2em;
+    color: #777777;
+    display: block;
+  }
+  .carrousel .slidesNavigation {
+    display: block;
+    list-style: none;
+    text-align: center;
+    bottom: 1em;
+    /*--- Centering trick---*/
+      /* Absolute positioning*/
+      position: absolute; 
+      /* Abosulte positioning*/
+      width: 104px; /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+      left: 50%; /*Centering de element*/
+      margin-left: -52px; /*adjusting the centering by applying a negative margin of half of the width*/
+  }
+  .carrousel input {
+    display: none;
+  }
+  .carrousel .slidesNavigation label {
+    float: left;
+    margin: 6px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 2px #2980b9;
+    font-size: 0;
+  }
+  /* You have to repeat this with each slide
+  TODO: make it easier with SCSS
+  25% movement 100/slides-num
+  */
+  #radio-1:checked ~ .slides {
+    transform: translateX(0%);
+  }
+  #radio-2:checked ~ .slides {
+    transform: translateX(-25%);
+  }
+  #radio-3:checked ~ .slides {
+    transform: translateX(-50%);
+  }
+  #radio-4:checked ~ .slides {
+    transform: translateX(-75%);
+  }
+  
+  
+  .carrousel .slidesNavigation label:hover {
+     cursor: pointer;
+  }
+  /* You have to repeat this with each slide/dot */
+  .carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+  .carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+  .carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+  .carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+    background: #2980b9;
+  }
+  
+  @media  (max-width: 796px) {
+    .carrousel{
+      height: 8.5em;
+    }
+  }
+  @media  (max-width: 480px) {
+    .carrousel li p {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+    .carrousel li q {
+        font-size: 1em;
+    }
+    .carrousel li img {
+       width:2em;
+       margin-left: -1em;
+       margin-right: 0.25em;
+    }
+  }
+
+  .book-container {
+    margin: 0 auto;
+    max-width: 910px;
+  }
+  
+  .choose {
+    width: 100%;
+    height: 40px;
+  }
+  .fa {
+    margin-right: 20px;
+    font-size: 30px;
+    color: gray;
+    float: right;
+  }
+  /******************************************
+  Book stuff
+  *******************************************/
+  
+  .book {
+    display: inline-block;
+    width: 230px;
+    height: 390px;
+    box-shadow: 0 0 20px #aaa;
+    margin: 25px;
+    padding: 10px 10px 0 10px;
+    vertical-align: top;
+    transition: height 1s;
+  }
+  /* star button */
+  .book:after {
+    visibility: hidden;
+  }
+  
+  .cover {
+    border: 2px solid gray;
+    height: 80%;
+    overflow: hidden;
+  }
+  
+  .cover img {
+    width: 100%;
+  }
+  
+  .book p {
+    margin-top: 12px;
+    font-size: 15px;
+  }
+  
+  .book .author {
+    font-size: 13px;
+  }
+  @media (max-width: 941px) {
+    .book-container {
+      max-width: 700px;
+    }
+    .book {
+      margin: 49px;
+    }
+  }
+  @media (max-width: 730px) {
+    .book {
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    .cover {
+      
+    }
+  }
+  
+  /*********************************
+  other
+  **********************************/
+  
+  h1 {
+    color: gray;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -3px;
+  }
+  
+  /**********************************
+  display change
+  ***********************************/
+  /*book height smaller, cover opacity, move text onto cover and star too
+  animate it */
+  #list-th:target .book {
+    height: 100px;
+    width: 250px;
+    padding: 10px;
+    margin: 25px auto 25px auto;
+  }
+  
+  #list-th:target .cover {
+    width: 246px;
+  }
+  
+  #list-th:target img {
+    opacity: .1;
+  }
+  
+  #list-th:target p {
+    margin-top: -62px;
+    margin-left: 20px;
+  }
+  /* remove button? */
+  #large-th:target .book {
+    height: 390px;
+  }
+  
+  /***********************************
+  star animation
+  ***********************************/
+  /***********************************
+  zoom on click
+  ***********************************/
